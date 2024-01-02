@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+</head>
+<p class="text">Тебя в дороге застала непогода... Нужно разогнать облака. Переворачивай карты и запоминай
+    символы.
+    Название символа
+    пиши в поле ввода.</p>
+
+<div class="menu hidden">
+    <input type="text" class="input" placeholder="Название знака">
+    <button type="submit" class="button">Проверить</button>
+</div>
+
+<div class="cards hidden">
+    <div class="card" data-sign="sharp">
+        <img src="./img/sharp.png" alt="диез" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="sharp">
+        <img src="./img/sharp.png" alt="диез" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="fermata">
+        <img src="./img/fermata.png" alt="фермата" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="fermata">
+        <img src="./img/fermata.png" alt="фермата" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="flat">
+        <img src="./img/flat.png" alt="бемоль" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="flat">
+        <img src="./img/flat.png" alt="бемоль" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="forte">
+        <img src="./img/forte.png" alt="форте" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="forte">
+        <img src="./img/forte.png" alt="форте" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="reprise">
+        <img src="./img/reprise.png" alt="реприза" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="reprise">
+        <img src="./img/reprise.png" alt="реприза" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="piano">
+        <img src="./img/piano.png" alt="пиано" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+    <div class="card" data-sign="piano">
+        <img src="./img/piano.png" alt="пиано" class="card__front">
+        <img src="./img/back.png" alt="рубашка" class="card__back">
+    </div>
+</div>
+
+<div class="popup hidden">
+    <button class="popup__button"></button>
+    <p class="popup__text">
+    </p>
+</div>
+
+
+<div class="popup-winner hidden">
+    <p class="popup-winner__text">Молодец! </p>
+    <p class="popup-winner__text">Твой ключ - буква Н. </p>
+    <p class="popup-winner__text">Запомни ее - она тебе пригодится</p>
+</div>
+
+
+
+<body>
+    <script src="./script.js"></script>
+</body>
+
+</html>
