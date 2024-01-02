@@ -121,8 +121,7 @@ const checkForMatch = () => {
         popup.classList.remove('hidden');
         boardLock = false;
 
-        popupText.textContent =
-          'РЕПРИЗА - знак, обозначающий повтор. Твой ключ  - буква Н. Запомни ее - она тебе пригодится';
+        popupText.textContent = 'РЕПРИЗА - знак, обозначающий повтор';
       } else if (input === 'пиано' && firstCard.dataset.sign === 'piano') {
         console.log('правило пиано');
         popup.classList.remove('hidden');
@@ -148,10 +147,14 @@ const checkForMatch = () => {
           input === 'бемоль')
       ) {
         console.log('Победитель');
-        popupWinner.classList.remove('hidden');
+
         document.body.style.backgroundImage = "url('./img/sun.jpg')";
         cards.forEach((card) => (card.style.backgroundColor = '#ebd654ed'));
-        popup.classList.add('hidden');
+
+        setTimeout(function () {
+          popup.classList.add('hidden');
+          popupWinner.classList.remove('hidden');
+        }, 4000);
       }
     });
   } else {
