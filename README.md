@@ -21,7 +21,7 @@ Flexbox, HTML, CSS, JavaScript.
 
 **Ссылка на проект:**
 
-[GitHub Pages](https://olga-mus.github.io/game-namenote/index.html)
+[GitHub Pages](https://olga-mus.github.io/game-memory/index.html)
 
 **Статус проекта:**
 Закончена
