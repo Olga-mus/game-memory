@@ -148,12 +148,11 @@ const checkForMatch = () => {
       ) {
         console.log('Победитель');
 
-        document.body.style.backgroundImage = "url('./img/sun.jpg')";
-        cards.forEach((card) => (card.style.backgroundColor = '#ebd654ed'));
-
         setTimeout(function () {
           popup.classList.add('hidden');
           popupWinner.classList.remove('hidden');
+          document.body.style.backgroundImage = "url('./img/sun.jpg')";
+          cards.forEach((card) => (card.style.backgroundColor = '#ebd654ed'));
         }, 4000);
       }
     });
